@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CV</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Flamenco:wght@400&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/ca31d98611.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="main-info" class="text-center">
+        <img src="" alt="Foto" id="pic">
+        <button class="popup" id="nombre" onclick="popUp()">
+            <h1 id="nombre-txt">Nombre</h1>
+            <span class="popuptext" id="myPopup">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </span>
+        </button>
+        <!-- <h1 id="nombre">
+            <button onclick="holamundo();">Nombre</button>
+        </h1> -->
+    </div>
+    <div id="info">
+        <p id="phone">Tel</p>
+        <p id="mail">mail</p>
+        <p id="address">dir</p>
+    </div>
+
+    <div id="education">
+        <h2>Antecedentes académicos</h2>
+        <div class="accordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Primario
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Escuela primaria.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus posuere eleifend commodo. In blandit molestie ligula, et viverra odio dignissim non.
+                        Aenean dictum turpis in tortor venenatis, ut laoreet erat maximus.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Secundario
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Escuela secundaria.</strong> Etiam sollicitudin mollis arcu non posuere. Nunc cursus,
+                        velit quis convallis mattis, massa lacus lacinia tellus, quis faucibus nunc massa maximus es.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Universitario
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Universidad.</strong> Aliquam fermentum nisl vel lacus pretium, eu finibus nulla dictum.
+                        Curabitur id justo et nisl mattis semper. Nam ultrices tempor tincidunt.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="experience">
+        <h2>Experiencia laboral</h2>
+        <div class="accordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                        Desarrollador jr.
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>2020 - Actualidad</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus posuere eleifend commodo. In blandit molestie ligula, et viverra odio dignissim non.
+                        Aenean dictum turpis in tortor venenatis, ut laoreet erat maximus.
+                        <ul>
+                            <li>Actividad 1</li>
+                            <li>Actividad 2</li>
+                            <li>Actividad 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Administrador de redes
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>2014 - 2020</strong> Etiam sollicitudin mollis arcu non posuere. Nunc cursus, velit quis
+                        convallis mattis, massa lacus lacinia tellus, quis faucibus nunc massa maximus es.
+                        <ul>
+                            <li>Actividad 1</li>
+                            <li>Actividad 2</li>
+                            <li>Actividad 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        Data entry
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>2010 - 2014</strong> Aliquam fermentum nisl vel lacus pretium, eu finibus nulla dictum.
+                        Curabitur id justo et nisl mattis semper. Nam ultrices tempor tincidunt.
+                        <ul>
+                            <li>Actividad 1</li>
+                            <li>Actividad 2</li>
+                            <li>Actividad 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
